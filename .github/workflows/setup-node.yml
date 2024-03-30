@@ -1,5 +1,8 @@
 name: setup-node
 description: "Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧"
+on:
+  branch_protection_rule:
+    types: [created, edited, deleted]
 runs:
   using: "composite"
   steps:
