@@ -1,10 +1,8 @@
 name: publish-to-github-pages
 on:
-  # Manual run
-  workflow_dispatch:
-  pull_request:
-    paths:
-      - 'package-lock.json'
+  push:
+    branches:
+      - master
 
 permissions:
   contents: read
