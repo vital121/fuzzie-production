@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - master
+on:
+  # Manual run
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'package-lock.json'
 
 permissions:
   contents: read
