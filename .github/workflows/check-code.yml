@@ -1,6 +1,7 @@
 name: check-code-style
-on: push
-
+on: 
+  branch_protection_rule:
+    types: [created, deleted, edited]
 jobs:
   check-code-style:
     runs-on: ubuntu-latest
